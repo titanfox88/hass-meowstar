@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "喵星公民",
+        "description": "使用喵星公民 App 的手机号和密码登录。",
+        "data": {
+          "mobile": "手机号",
+          "password": "密码"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "连接失败，请检查网络",
+      "invalid_auth": "手机号或密码错误",
+      "unknown": "未知错误，请查看日志"
+    },
+    "abort": {
+      "already_configured": "该账号已添加过集成"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "喵星公民 设置",
+        "data": {
+          "scan_interval": "刷新间隔（秒，最小 30）"
+        }
+      }
+    }
+  }
+}
