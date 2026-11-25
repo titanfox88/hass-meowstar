@@ -15,7 +15,7 @@
  * 卡片自动发现该设备下所有 meowstar 实体并渲染。
  */
 
-const CARD_VERSION = '0.7.2';
+const CARD_VERSION = '0.7.3';
 
 console.info(
   '%c MEOWSTAR-CARD %c v' + CARD_VERSION + ' ',
@@ -348,7 +348,7 @@ class MeowStarFeederCard extends MeowStarBaseCard {
     hero.className = 'mx-hero';
     hero.innerHTML = `
       <div class="mx-bubbles">
-        <div class="mx-bubble"><b>粮仓</b> ${this.value('barn_temperature')}${this.unit('barn_temperature')} · ${this.value('barn_humidity')}${this.unit('barn_humidity')} ${this._humidityTag(this.value('barn_humidity', ''))}</div>
+        <div class="mx-bubble"><b>粮仓</b> ${this.value('barn_temperature')}${this.unit('barn_temperature')}<br>湿度 ${this.value('barn_humidity')}${this.unit('barn_humidity')} ${this._humidityTag(this.value('barn_humidity', ''))}</div>
       </div>
       <div class="mx-center">
         <div class="mx-center-big">${this.value('bowl_food')}<span class="mx-center-unit">${this.unit('bowl_food')}</span></div>
