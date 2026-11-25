@@ -110,10 +110,14 @@ def _cats_from_device(data: MeowStarDeviceData) -> list[dict[str, Any]]:
             "duration": None,
             "excreta": None,
         }
+    seen_cats: set[str] = set()  # work log is newest-first: keep each cat first hit (its latest visit) only
     for group in data.work_log or []:
         nick = group.get("nickname")
         if not nick or nick in ("未知", "unknown") or nick not in cats:
             continue
+        if nick in seen_cats:
+            continue
+        seen_cats.add(nick)
         info = group.get("taskRecordInfo") or {}
         cat = cats[nick]
         cat["count"] = group.get("currentCount", cat.get("count"))
