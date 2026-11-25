@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MeowStar",
+        "description": "Log in with the mobile number and password used in the MeowStar app.",
+        "data": {
+          "mobile": "Mobile number",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect, please check the network",
+      "invalid_auth": "Invalid mobile number or password",
+      "unknown": "Unknown error, see the logs"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "MeowStar options",
+        "data": {
+          "scan_interval": "Scan interval (seconds, minimum 30)"
+        }
+      }
+    }
+  }
+}
