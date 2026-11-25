@@ -1,0 +1,13 @@
+{
+  "domain": "meowstar",
+  "name": "MeowStar (喵星公民)",
+  "codeowners": ["@titanfox88"],
+  "config_flow": true,
+  "documentation": "https://github.com/titanfox88/hass-meowstar",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/titanfox88/hass-meowstar/issues",
+  "loggers": ["custom_components.meowstar"],
+  "requirements": [],
+  "version": "0.1.0"
+}
